@@ -57,6 +57,6 @@ Pod::Spec.new do |s|
 
   # Finally, specify any Pods that this Pod depends on.
   #
-  #s.dependency 'protobuf-objc-iOS5', :git => 'git@github.com/jrmiddle/protobuf-objc-iOS5.git', :branch => 'master', :tag => '1.0.0'
-  #s.dependency 'corona_fw', :git  => 'git@github.com:jrmiddle/corona_fw.git', :branch => 'master'
+  s.dependency 'protobuf-objc-iOS5'
+  s.dependency 'corona_fw'
 end
