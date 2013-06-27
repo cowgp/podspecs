@@ -6,7 +6,7 @@ proto_files = ["WhistleMessage.proto", "DataMessage.proto"]
 
 Pod::Spec.new do |s|
   s.name         = "corona_fw"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "Whistle device communication code"
   s.homepage     = "https://github.com/WhistleLabs/corona_fw"
   s.license      = 'WhistleLabs Proprietary'
