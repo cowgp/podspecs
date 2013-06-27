@@ -4,6 +4,7 @@
 #
 # To learn more about the attributes see http://docs.cocoapods.org/specification.html
 #
+
 Pod::Spec.new do |s|
   s.name         = "WLWhistleCore"
   s.version      = "0.0.1"
