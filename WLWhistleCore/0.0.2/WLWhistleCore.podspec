@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.1'
   s.source_files = 'WLWhistleCore/**/*.{h,m}'
   s.public_header_files = 'WLWhistleCore/**/*.h'
-  s.framework  = 'ExternalAccessory'
+  s.frameworks   = 'ExternalAccessory', 'CoreBluetooth'
   s.requires_arc = true
   s.dependency 'corona_fw'
 end
