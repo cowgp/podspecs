@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = 'Resty is a simple to use HTTP library for Cocoa and iOS apps, aimed at consuming RESTful web services and APIs. Forked by jrmiddle to resolve dispatch issue.'
   s.homepage     = 'http://projects.lukeredpath.co.uk/resty/'
   s.authors      = { 'Luke Redpath' => 'luke@lukeredpath.co.uk', 'Justin Middleton' => 'jrmiddle@gmail.com' }
-  s.source       = { :git => 'https://github.com/WhistleLabs/LRResty.git', :tag => 'v0.11.1' }
+  s.source       = { :git => 'https://github.com/WhistleLabs/LRResty.git', :tag => '0.11.1' }
   s.license      = 'MIT'
 
   s.source_files = 'Classes/**/*.{h,m}'
