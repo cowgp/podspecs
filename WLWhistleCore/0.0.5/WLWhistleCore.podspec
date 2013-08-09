@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://github.com/WhistleLabs/WhistleCore"
   s.license      = 'Whistle Labs, Inc. Proprietery'
   s.author       = { "Justin Middleton" => "justin@whistle.com" }
-  s.source       = { :git => "git@github.com:WhistleLabs/WhistleCore.git", :tag => "0.0.5a" }
+  s.source       = { :git => "git@github.com:WhistleLabs/WhistleCore.git", :tag => "0.0.5b" }
   s.platform     = :ios, '6.1'
   s.source_files = 'WLWhistleCore/**/*.{h,m}'
   s.public_header_files = 'WLWhistleCore/**/*.h'
