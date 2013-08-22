@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = 'A controller for representing modal, popup-style content on iPhone.'
   s.homepage     = 'https://github.com/zwaldowski/DZPopupController'
   s.author       = { 'Zachary Waldowski' => 'zwaldowski@gmail.com' }
-  s.source       = { :git => 'https://github.com/zwaldowski/DZPopupController.git', :tag => 'v1.7' }
+  s.source       = { :git => 'https://github.com/jrmiddle/DZPopupController.git', :tag => 'v1.7_w1' }
   s.description  = 'DZPopupController is a floating UI component. It is a ' \
                    'customizable modal view controller with custom presentation, ' \
                    'ranging from that of UIPopoverController to UIAlertView.'
