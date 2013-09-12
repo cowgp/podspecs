@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.5"
   s.summary      = "Core APIs for interacting with Whistle devices."
   s.homepage     = "http://github.com/WhistleLabs/WhistleCore"
-  s.license      = 'Whistle Labs, Inc. Proprietery'
+  s.license      = 'Whistle Labs, Inc. Proprietary'
   s.author       = { "Justin Middleton" => "justin@whistle.com" }
   s.source       = { :git => "git@github.com:WhistleLabs/WhistleCore.git", :tag => "0.0.5h" }
   s.platform     = :ios, '6.1'
