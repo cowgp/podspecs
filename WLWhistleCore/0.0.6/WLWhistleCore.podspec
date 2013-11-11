@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.public_header_files = 'WLWhistleCore/**/*.h'
   s.frameworks   = 'ExternalAccessory', 'CoreBluetooth'
   s.requires_arc = true
-  s.dependency 'corona_fw'
+  s.dependency 'corona_fw', '1.0.1'
 end
