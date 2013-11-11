@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 
   def s.pre_install(pod, target_definition)
     Dir.chdir(pod.root) do
-      `./autogen.sh && ./configure CXXFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib && make`
+      `./autogen.sh && ./configure CC=clang CXX="clang++ -std=c++11 -stdlib=libc++" CXXFLAGS="-O3 -I/usr/local/include" LDFLAGS=-L/usr/local/lib && make`
+
     end
   end
 end
