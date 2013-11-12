@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
   s.homepage     = "http://github.com/WhistleLabs/WhistleCore"
   s.license      = 'Whistle Labs, Inc. Proprietary'
   s.author       = { "Justin Middleton" => "justin@whistle.com" }
-  s.source       = { :git => "git@github.com:WhistleLabs/WhistleCore.git", :tag => "0.0.6a" }
+  s.source       = { :git => "git@github.com:WhistleLabs/WhistleCore.git", :tag => "0.0.7a" }
   s.platform     = :ios, '6.1'
   s.source_files = 'WLWhistleCore/**/*.{h,m}'
   s.public_header_files = 'WLWhistleCore/**/*.h'
   s.frameworks   = 'ExternalAccessory', 'CoreBluetooth'
   s.requires_arc = true
-  s.dependency 'corona_fw', '1.0.2'
+  s.dependency 'corona_fw', '1.0.1'
 end
