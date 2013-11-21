@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/willowtreeapps/MTStackViewController"
   s.license      = 'MIT'
   s.author       = { "WillowTree Apps" => "" }
-  s.source       = { :git => "https://github.com/WhistleLabs/MTStackViewController.git", :tag => "2.2.2c" }
+  s.source       = { :git => "https://github.com/WhistleLabs/MTStackViewController.git", :tag => "2.2.2d" }
   s.source_files = 'Classes/**/*.{h,m}'
   s.requires_arc = true
   s.frameworks = 'QuartzCore'
