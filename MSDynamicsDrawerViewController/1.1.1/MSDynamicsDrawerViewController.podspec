@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.summary      = 'Container view controller that leverages UIKit Dynamics to provide a realistic drawer navigation paradigm.'
   s.homepage     = 'https://github.com/monospacecollective/MSDynamicsDrawerViewController'
   s.author       = { 'Eric Horacek' => 'eric@monospacecollective.com' }
-  s.source       = { :git => 'https://github.com/monospacecollective/MSDynamicsDrawerViewController.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/WhistleLabs/MSDynamicsDrawerViewController.git', :tag => s.version.to_s }
   
   s.source_files = 'MSDynamicsDrawerViewController/*.{h,m}'
   
