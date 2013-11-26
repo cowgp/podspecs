@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'MSDynamicsDrawerViewController'
   s.version      = '1.1.1'
   s.license      = 'MIT'
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.1'
   
   s.summary      = 'Container view controller that leverages UIKit Dynamics to provide a realistic drawer navigation paradigm.'
   s.homepage     = 'https://github.com/monospacecollective/MSDynamicsDrawerViewController'
