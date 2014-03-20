@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.license         = { :type => "MIT", :file => "License.md" }
   s.author          = { "Segment.io" => "friends@segment.io" }
   s.source          = { :git => "git@github.com:segmentio/analytics-ios.git", :commit => "b7be9e1af2ac85b3f1a72276d1351a27369b2dbe"}
+  s.source_files    = 'Analytics/*.{h,m}'
   s.platform        = :ios, "6.0"
   s.resources       = ["Analytics.framework/Versions/A/Resources/*"]
   s.frameworks      = "Analytics", "Foundation", "UIKit", "CoreData", "SystemConfiguration", 
