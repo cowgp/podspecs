@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = 'Whistle Labs, Inc. Proprietary'
   s.author       = { "Justin Middleton" => "justin@whistle.com" }
   s.source       = { :git => "git@github.com:WhistleLabs/WhistleCore.git", :tag => "1.0.0f" }
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.1'
   s.source_files = 'WLWhistleCore/**/*.{h,m}'
   s.public_header_files = 'WLWhistleCore/**/*.h'
   s.frameworks   = 'ExternalAccessory', 'CoreBluetooth'
