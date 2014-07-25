@@ -16,49 +16,25 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.8'
   s.preserve_paths = "MQX 3.8/whistle/corona/common/wmp/*.proto"
-  s.dependency 'protobuf-objc-iOS5'
+  s.dependency 'protobuf-objc-iOS5', '1.0.1'
   
-#  s.pre_install do |pod, target_definition|
-#    # ooh so nasty
-#    proto_src_dir = File.join(target_definition.sandbox_dir, proto_src_rel_dir)
-#    proto_target_dir = File.join(target_definition.sandbox_dir, proto_target_rel_dir)
-#    FileUtils.mkdir_p(proto_target_dir)
-#
-#    # Touch placeholders for the objc files
-#    touch_commands = proto_files.map {|f| "touch #{proto_target_dir}/#{f.sub(".proto", "")}.pb.h #{proto_target_dir}/#{f.sub(".proto", "")}.pb.m"}
-#    touch_commands.map { |c| system c }
-#
-#    # Copy the .protos for reference.
-#    proto_files.map { |f| FileUtils.cp(File.join(proto_src_dir, f), proto_target_dir) }
-#  end
-#
-#  s.post_install do |target_definition|
-#    protoc_objc_plugin = File.join(target_definition.sandbox_dir, "protobuf-objc-iOS5", "src", "compiler", "protoc-gen-objc")
-#    proto_src_dir = File.join(target_definition.sandbox_dir, proto_src_rel_dir)
-#    proto_target_dir = File.join(target_definition.sandbox_dir, proto_target_rel_dir)
-#
-#    proto_target_paths = proto_files.map { |t| File.join(proto_target_dir, t) }
-#    protoc = "protoc --plugin=#{protoc_objc_plugin} --proto_path='#{proto_target_dir}' --objc_out='#{proto_target_dir}'"
-#    proto_cmds = proto_target_paths.map { |t| "#{protoc} #{t}"}
-#    proto_cmds.map { |c| system c }
-#  end
-
   s.prepare_command = <<-end
 
     SRC_DIR="#{File.join("MQX 3.8", "whistle", "corona", "common", "wmp")}"
     TARGET_DIR="WhistleProto"
     PROTO_FILES="WhistleMessage.proto DataMessage.proto"
-    PROTO_OBJC_PLUGIN="#{File.join("..", "protobuf-objc-iOS5", "src", "compiler", "protoc-gen-objc")}"
+    PROTO_OBJC_PLUGIN="/usr/local/bin/protoc-gen-objc"
 
     # Verify protoc exists and error hard if not
     if [ ! -f "${PROTO_OBJC_PLUGIN}" ]; then
         echo "ERROR: protoc compiler plugin \\\"${PROTO_OBJC_PLUGIN}\\\" not found!";
+        echo "Did you install the protobuf-objc-ios brew formula?"
         exit 1;
     fi
 
     mkdir -p "${TARGET_DIR}"
     for proto_file in $PROTO_FILES; do
-        cp ${proto_file} "${TARGET_DIR}"
+        cp "${SRC_DIR}/${proto_file}" "${TARGET_DIR}"
         protoc --plugin="${PROTO_OBJC_PLUGIN}" --proto_path="${TARGET_DIR}" --objc_out="${TARGET_DIR}" "${TARGET_DIR}/${proto_file}"
     done
     
