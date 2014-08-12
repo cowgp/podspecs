@@ -8,7 +8,7 @@
     "Georg C. Brückmann": "gcb@bloo7.com"
   },
   "source": {
-    "git": "https://github.com/gcbrueckmann/GCBActionSheet.git",
+    "git": "https://github.com/WhistleLabs/GCBActionSheet.git",
     "tag": "1.0.0a"
   },
   "platforms": {
