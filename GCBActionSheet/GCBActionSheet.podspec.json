@@ -1,6 +1,6 @@
 {
   "name": "GCBActionSheet",
-  "version": "1.0.0",
+  "version": "1.0.0a",
   "summary": "A subclass of UIActionSheet that lets you attach blocks to its buttons.",
   "homepage": "https://github.com/gcbrueckmann/GCBActionSheet",
   "license": "MIT",
