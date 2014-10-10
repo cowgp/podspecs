@@ -6,6 +6,6 @@ Pod::Spec.new do |s|
   s.homepage = 'http://boredzo.org/iso8601dateformatter/'
   s.author   = 'Peter Hosey'
   s.source   = { :git => 'https://github.com/WhistleLabs/iso-8601-date-formatter.git', :tag => '0.6.1' }
-
+  s.requires_arc = false
   s.source_files = 'ISO8601DateFormatter.{h,m}'
 end
